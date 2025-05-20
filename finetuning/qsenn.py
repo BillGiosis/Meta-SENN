@@ -101,7 +101,7 @@ def finetune_qsenn(model, train_loader, test_loader, log_dir, n_classes, seed, b
             log_dir=weights_log_dir,
             n_features=feature_dim,
             device=device,
-            rl_iterations=meta_iterations*20,
+            rl_iterations=meta_iterations*2,
             lr=0.001,
         )
 
